@@ -48,7 +48,7 @@ const index = () => {
           <form
             action='mailto:peter.quang.nguyen@gmail.com'
             method='POST'
-            enctype='text/plain'
+            encType='text/plain'
           >
             <label
               htmlFor='name'
