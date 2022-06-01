@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import ButtonPrimary from "../components/ButtonPrimary";
 import ButtonSecondary from "../components/ButtonSecondary";
 import Footer from "../components/Footer";
@@ -43,14 +44,15 @@ export default function Home() {
             find me outdoors. I love being out in nature whether that's going
             for a walk, run or cycling. I'd love you to check out my work.
           </p>
-          <ButtonSecondary>GO TO PORTFOLIO</ButtonSecondary>
+
+          <ButtonSecondary href='/portfolio'>GO TO PORTFOLIO</ButtonSecondary>
         </div>
         <hr className='mt-[50px]' />
         <div className='flex flex-col items-center'>
           <h2 className='mt-[115px] mb-10 text-center'>
             Interested in doing a project together?
           </h2>
-          <ButtonSecondary>CONTACT ME</ButtonSecondary>
+          <ButtonSecondary href='/contact'>CONTACT ME</ButtonSecondary>
           <div className='mt-[50px]' />
         </div>
       </main>

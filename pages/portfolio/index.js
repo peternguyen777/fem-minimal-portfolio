@@ -17,7 +17,7 @@ const index = () => {
               <hr className='mt-8 mb-6' />
               <h2 className='mb-6'>{item.title}</h2>
               <p className='mb-6 text-[15px]'>{item.introduction}</p>
-              <ButtonSecondary>VIEW PROJECT</ButtonSecondary>
+              <ButtonSecondary href='/'>VIEW PROJECT</ButtonSecondary>
               <hr className='mt-6 mb-[72px]' />
             </div>
           );
@@ -26,7 +26,7 @@ const index = () => {
           <h2 className='mt-2 mb-10 text-center'>
             Interested in doing a project together?
           </h2>
-          <ButtonSecondary>CONTACT ME</ButtonSecondary>
+          <ButtonSecondary href='/contact'>CONTACT ME</ButtonSecondary>
           <div className='mt-[50px]' />
         </div>
       </main>
