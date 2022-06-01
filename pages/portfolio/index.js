@@ -17,7 +17,9 @@ const index = () => {
               <hr className='mt-8 mb-6' />
               <h2 className='mb-6'>{item.title}</h2>
               <p className='mb-6 text-[15px]'>{item.introduction}</p>
-              <ButtonSecondary href='/'>VIEW PROJECT</ButtonSecondary>
+              <ButtonSecondary href={`/portfolio/${item.slug}`}>
+                VIEW PROJECT
+              </ButtonSecondary>
               <hr className='mt-6 mb-[72px]' />
             </div>
           );
