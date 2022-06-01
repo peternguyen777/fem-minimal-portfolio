@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import ButtonPrimary from "../components/ButtonPrimary";
 import ButtonSecondary from "../components/ButtonSecondary";
 import Footer from "../components/Footer";
