@@ -22,12 +22,12 @@ const Footer = () => {
             HOME
           </a>
         </Link>
-        <Link href='/'>
+        <Link href='/portfolio'>
           <a className='font-publicsans text-[12px] leading-[14px] tracking-[2px] text-white'>
             PORTFOLIO
           </a>
         </Link>
-        <Link href='/'>
+        <Link href='/contact'>
           <a className='font-publicsans text-[12px] leading-[14px] tracking-[2px] text-white'>
             CONTACT ME
           </a>
