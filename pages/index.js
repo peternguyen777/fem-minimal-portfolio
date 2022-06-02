@@ -31,9 +31,8 @@ export default function Home() {
           alt=''
           className='mb-8 mt-24'
         />
-        <hr id='about-me-section' className='absolute top-[1050px]' />
         <hr />
-        <div>
+        <div id='about-me-section'>
           <h2 className='mb-7 mt-8'>About Me</h2>
           <p className='mb-6'>
             I'm a junior front-end developer looking for a new role in an
