@@ -25,12 +25,13 @@ export default function Home() {
         <h2 className='mb-8'>
           Hey, I'm Alex Spencer and I love building beautiful websites
         </h2>
-        <ButtonPrimary>ABOUT ME</ButtonPrimary>
+        <ButtonPrimary href='#about-me-section'>ABOUT ME</ButtonPrimary>
         <img
           src='/homepage/mobile/image-homepage-profile@2x.jpg'
           alt=''
           className='mb-8 mt-24'
         />
+        <hr id='about-me-section' className='absolute top-[1050px]' />
         <hr />
         <div>
           <h2 className='mb-7 mt-8'>About Me</h2>
