@@ -1,6 +1,7 @@
 import Head from "next/head";
 import ButtonPrimary from "../components/ButtonPrimary";
 import ButtonSecondary from "../components/ButtonSecondary";
+import ContactFooter from "../components/ContactFooter";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
@@ -16,45 +17,66 @@ export default function Home() {
 
       <Header />
 
-      <main className='mt-[104px] bg-secondary_grey_bg px-8'>
+      <main className='mt-[104px] bg-secondary_grey_bg px-8 sm:mt-[144px]'>
         <img
           src='/homepage/mobile/image-homepage-hero@2x.jpg'
           alt=''
-          className='mb-6'
+          className='mb-6 sm:hidden'
         />
-        <h2 className='mb-8'>
-          Hey, I'm Alex Spencer and I love building beautiful websites
-        </h2>
-        <ButtonPrimary href='#about-me-section'>ABOUT ME</ButtonPrimary>
-        <img
-          src='/homepage/mobile/image-homepage-profile@2x.jpg'
-          alt=''
-          className='mb-8 mt-24'
-        />
-        <hr />
-        <div id='about-me-section'>
-          <h2 className='mb-7 mt-8'>About Me</h2>
-          <p className='mb-6'>
-            I'm a junior front-end developer looking for a new role in an
-            exciting company. I focus on writing accessible HTML, using modern
-            CSS practices and writing clean JavaScript. When writing JavaScript
-            code, I mostly use React, but I can adapt to whatever tools are
-            required. I'm based in London, UK, but I'm happy working remotely
-            and have experience in remote teams. When I'm not coding, you'll
-            find me outdoors. I love being out in nature whether that's going
-            for a walk, run or cycling. I'd love you to check out my work.
-          </p>
+        <div className='relative h-auto w-auto'>
+          <img
+            src='/homepage/tablet/image-homepage-hero@2x.jpg'
+            alt=''
+            className='mb-6 hidden sm:mb-0 sm:inline-block'
+          />
+          <div className='sm:absolute sm:bottom-0 sm:flex sm:h-[278px] sm:w-[514px] sm:flex-col sm:justify-end sm:bg-secondary_grey_bg'>
+            <h2 className='mb-8 sm:w-[458px]'>
+              Hey, I'm Alex Spencer and I love building beautiful websites
+            </h2>
+            <ButtonPrimary href='#about-me-section'>ABOUT ME</ButtonPrimary>
+          </div>
+        </div>
 
-          <ButtonSecondary href='/portfolio'>GO TO PORTFOLIO</ButtonSecondary>
+        <div className='mb-8 mt-24 sm:mb-0 sm:grid sm:grid-cols-10'>
+          <img
+            src='/homepage/mobile/image-homepage-profile@2x.jpg'
+            alt=''
+            className='sm:hidden'
+          />
+          <img
+            src='/homepage/tablet/image-homepage-profile@2x.jpg'
+            alt=''
+            className=' hidden sm:col-span-4 sm:inline-block'
+          />
+          <div className='sm:col-span-6 sm:flex sm:flex-col sm:justify-between sm:pl-[68px]'>
+            <div>
+              <hr />
+              <div id='about-me-section'>
+                <h2 className='mb-7 mt-8'>About Me</h2>
+                <p className='mb-6'>
+                  I'm a junior front-end developer looking for a new role in an
+                  exciting company. I focus on writing accessible HTML, using
+                  modern CSS practices and writing clean JavaScript. When
+                  writing JavaScript code, I mostly use React, but I can adapt
+                  to whatever tools are required. I'm based in London, UK, but
+                  I'm happy working remotely and have experience in remote
+                  teams. When I'm not coding, you'll find me outdoors. I love
+                  being out in nature whether that's going for a walk, run or
+                  cycling. I'd love you to check out my work.
+                </p>
+
+                <ButtonSecondary href='/portfolio'>
+                  GO TO PORTFOLIO
+                </ButtonSecondary>
+              </div>
+            </div>
+            <hr className='hidden sm:inline-block' />
+          </div>
         </div>
-        <hr className='mt-[50px]' />
-        <div className='flex flex-col items-center'>
-          <h2 className='mt-[115px] mb-10 text-center'>
-            Interested in doing a project together?
-          </h2>
-          <ButtonSecondary href='/contact'>CONTACT ME</ButtonSecondary>
-          <div className='mt-[50px]' />
-        </div>
+
+        <hr className='mt-[50px] mb-[35px] sm:hidden' />
+
+        <ContactFooter />
       </main>
 
       <Footer />

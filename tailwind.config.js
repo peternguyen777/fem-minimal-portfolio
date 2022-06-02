@@ -18,6 +18,16 @@ module.exports = {
         secondary_red: "#F43030",
       },
     },
+    screens: {
+      sm: "640px",
+      // => @media (min-width: 576px) { ... }
+
+      md: "768px",
+      // => @media (min-width: 960px) { ... }
+
+      lg: "1440px",
+      // => @media (min-width: 1440px) { ... }
+    },
   },
   plugins: [],
 };

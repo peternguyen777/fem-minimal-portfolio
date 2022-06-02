@@ -29,7 +29,7 @@ const index = () => {
             Interested in doing a project together?
           </h2>
           <ButtonSecondary href='/contact'>CONTACT ME</ButtonSecondary>
-          <div className='mt-[50px]' />
+          <div className='mt-[80px]' />
         </div>
       </main>
 

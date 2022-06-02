@@ -3,37 +3,39 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className='flex flex-col items-center bg-primary_darkblue'>
-      <svg
-        xmlns='http://www.w3.org/2000/svg'
-        width='61'
-        height='32'
-        className='mt-14 mb-10'
-      >
-        <path
-          fill='#FFFFFF'
-          fillRule='evenodd'
-          d='M60.082 5.878L44.408 32 28.735 5.878h31.347zM15.673 0l15.674 26.122H0L15.673 0z'
-        />
-      </svg>
-      <div className='mb-10 flex flex-col items-center space-y-8'>
-        <Link href='/'>
-          <a className='font-publicsans text-[12px] leading-[14px] tracking-[2px] text-white'>
-            HOME
-          </a>
-        </Link>
-        <Link href='/portfolio'>
-          <a className='font-publicsans text-[12px] leading-[14px] tracking-[2px] text-white'>
-            PORTFOLIO
-          </a>
-        </Link>
-        <Link href='/contact'>
-          <a className='font-publicsans text-[12px] leading-[14px] tracking-[2px] text-white'>
-            CONTACT ME
-          </a>
-        </Link>
+    <footer className='flex flex-col items-center bg-primary_darkblue sm:h-[80px] sm:flex-row sm:justify-between sm:px-10'>
+      <div className='flex flex-col items-center sm:flex-row sm:items-center'>
+        <svg
+          xmlns='http://www.w3.org/2000/svg'
+          width='61'
+          height='32'
+          className='mt-14 mb-10 sm:my-0'
+        >
+          <path
+            fill='#FFFFFF'
+            fillRule='evenodd'
+            d='M60.082 5.878L44.408 32 28.735 5.878h31.347zM15.673 0l15.674 26.122H0L15.673 0z'
+          />
+        </svg>
+        <div className='mb-10 flex flex-col items-center space-y-8 sm:mb-0 sm:ml-12 sm:flex-row sm:space-y-0 sm:space-x-[42px]'>
+          <Link href='/'>
+            <a className='font-publicsans text-[12px] leading-[14px] tracking-[2px] text-white'>
+              HOME
+            </a>
+          </Link>
+          <Link href='/portfolio'>
+            <a className='font-publicsans text-[12px] leading-[14px] tracking-[2px] text-white'>
+              PORTFOLIO
+            </a>
+          </Link>
+          <Link href='/contact'>
+            <a className='font-publicsans text-[12px] leading-[14px] tracking-[2px] text-white'>
+              CONTACT ME
+            </a>
+          </Link>
+        </div>
       </div>
-      <div className='mb-14 flex items-center space-x-4'>
+      <div className='mb-14 flex items-center space-x-4 sm:mb-0'>
         <svg xmlns='http://www.w3.org/2000/svg' width='25' height='24'>
           <path
             fill='#fff'

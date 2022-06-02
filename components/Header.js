@@ -10,20 +10,37 @@ const Header = () => {
 
   return (
     <header>
-      <div className='fixed top-0 flex w-screen items-center justify-between bg-secondary_grey_bg p-8 pb-10'>
-        <img src='/logo.svg' alt='' className='' />
+      <div className='fixed top-0 z-30 flex w-screen items-center justify-between bg-secondary_grey_bg p-8 pb-10 sm:px-10 sm:pt-16 sm:pb-12'>
+        <img src='/logo.svg' alt='' />
+        <div className='hidden items-center space-x-[42px] sm:inline-flex sm:items-center'>
+          <Link href='/'>
+            <a className='font-publicsans text-[12px] leading-[14px] tracking-[2px]'>
+              HOME
+            </a>
+          </Link>
+          <Link href='/portfolio'>
+            <a className='font-publicsans text-[12px] leading-[14px] tracking-[2px]'>
+              PORTFOLIO
+            </a>
+          </Link>
+          <Link href='/contact'>
+            <a className='font-publicsans text-[12px] leading-[14px] tracking-[2px]'>
+              CONTACT ME
+            </a>
+          </Link>
+        </div>
         {mobileMenu ? (
           <img
             src='/icons/close.svg'
             alt=''
-            className=''
+            className='sm:hidden'
             onClick={mobileMenuHandler}
           />
         ) : (
           <img
             src='/icons/hamburger.svg'
             alt=''
-            className='h-[13px] w-[24px]'
+            className='h-[13px] w-[24px] sm:hidden'
             onClick={mobileMenuHandler}
           />
         )}

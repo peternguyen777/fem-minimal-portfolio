@@ -49,7 +49,7 @@ const DetailPortfolio = (props) => {
             Interested in doing a project together?
           </h2>
           <ButtonSecondary href='/contact'>CONTACT ME</ButtonSecondary>
-          <div className='mt-20' />
+          <div className='mt-[80px]' />
         </div>
       </main>
 

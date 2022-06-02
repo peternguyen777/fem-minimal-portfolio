@@ -31,4 +31,10 @@
     scroll-behavior: smooth;
     scroll-padding: 104px;
   }
+
+  @media (min-width: 576px) {
+    html {
+      scroll-padding: 144px;
+    }
+  }
 }
