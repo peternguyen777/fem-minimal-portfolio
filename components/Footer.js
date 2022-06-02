@@ -5,18 +5,22 @@ const Footer = () => {
   return (
     <footer className='flex flex-col items-center bg-primary_darkblue sm:h-[80px] sm:flex-row sm:justify-between sm:px-10'>
       <div className='flex flex-col items-center sm:flex-row sm:items-center'>
-        <svg
-          xmlns='http://www.w3.org/2000/svg'
-          width='61'
-          height='32'
-          className='mt-14 mb-10 sm:my-0'
-        >
-          <path
-            fill='#FFFFFF'
-            fillRule='evenodd'
-            d='M60.082 5.878L44.408 32 28.735 5.878h31.347zM15.673 0l15.674 26.122H0L15.673 0z'
-          />
-        </svg>
+        <Link href='/'>
+          <a>
+            <svg
+              xmlns='http://www.w3.org/2000/svg'
+              width='61'
+              height='32'
+              className='mt-14 mb-10 sm:my-0'
+            >
+              <path
+                fill='#FFFFFF'
+                fillRule='evenodd'
+                d='M60.082 5.878L44.408 32 28.735 5.878h31.347zM15.673 0l15.674 26.122H0L15.673 0z'
+              />
+            </svg>
+          </a>
+        </Link>
         <div className='mb-10 flex flex-col items-center space-y-8 sm:mb-0 sm:ml-12 sm:flex-row sm:space-y-0 sm:space-x-[42px]'>
           <Link href='/'>
             <a className='font-publicsans text-[12px] leading-[14px] tracking-[2px] text-white'>

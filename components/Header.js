@@ -11,7 +11,11 @@ const Header = () => {
   return (
     <header>
       <div className='fixed top-0 z-30 flex w-screen items-center justify-between bg-secondary_grey_bg p-8 pb-10 sm:px-10 sm:pt-16 sm:pb-12'>
-        <img src='/logo.svg' alt='' />
+        <Link href='/'>
+          <a>
+            <img src='/logo.svg' alt='' />
+          </a>
+        </Link>
         <div className='hidden items-center space-x-[42px] sm:inline-flex sm:items-center'>
           <Link href='/'>
             <a className='font-publicsans text-[12px] leading-[14px] tracking-[2px]'>
