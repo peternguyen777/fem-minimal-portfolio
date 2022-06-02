@@ -15,6 +15,10 @@
     @apply font-ibarrareal text-[32px] font-normal leading-[36px] text-primary_darkblue;
   }
 
+  h6 {
+    @apply font-publicsans text-[13px] font-semibold leading-[30px] text-primary_cyan;
+  }
+
   p {
     @apply font-publicsans text-[16px] font-normal leading-[30px] text-primary_darkblue;
   }
