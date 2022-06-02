@@ -94,7 +94,7 @@ const index = () => {
               className='mb-6 h-[96px] w-full bg-primary_darkblue/10 pt-2 indent-4 text-[13px] leading-[30px] text-primary_darkblue focus:border focus:border-primary_cyan focus:outline-none'
             />
             <ButtonSendMessage>SEND MESSAGE</ButtonSendMessage>
-            <div className='mt-[80px]'></div>
+            <div className='pt-[80px]'></div>
           </form>
         </div>
       </main>
