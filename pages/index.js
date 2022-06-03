@@ -17,7 +17,7 @@ export default function Home() {
 
       <Header />
 
-      <main className='mt-[104px] bg-secondary_grey_bg px-8 sm:mt-[144px] sm:px-10'>
+      <main className='mt-[104px] bg-secondary_grey_bg px-8 sm:mt-[144px] sm:px-10 lg:px-[165px]'>
         <img
           src='/homepage/mobile/image-homepage-hero@2x.jpg'
           alt=''
@@ -27,17 +27,25 @@ export default function Home() {
           <img
             src='/homepage/tablet/image-homepage-hero@2x.jpg'
             alt=''
-            className='mb-6 hidden sm:mb-0 sm:inline-block'
+            className='hidden sm:mb-0 sm:inline-block lg:hidden'
           />
-          <div className='sm:absolute sm:bottom-0 sm:flex sm:h-[278px] sm:w-[514px] sm:flex-col sm:justify-end sm:bg-secondary_grey_bg'>
-            <h2 className='mb-8 sm:w-[458px]'>
+          <img
+            src='/homepage/desktop/image-homepage-hero@2x.jpg'
+            alt=''
+            className='hidden lg:mb-0 lg:inline-block'
+          />
+          <div className='sm:absolute sm:bottom-0 sm:flex sm:h-[278px] sm:w-[514px] sm:flex-col sm:justify-end sm:bg-secondary_grey_bg lg:h-[357px] lg:w-[445px]'>
+            <h1 className='mb-8 hidden lg:inline-block lg:w-[390px]'>
+              Hey, I'm Alex Spencer and I love building beautiful websites
+            </h1>
+            <h2 className='mb-8 sm:w-[458px] lg:hidden'>
               Hey, I'm Alex Spencer and I love building beautiful websites
             </h2>
             <ButtonPrimary href='#about-me-section'>ABOUT ME</ButtonPrimary>
           </div>
         </div>
 
-        <div className='mb-8 mt-24 sm:mb-0 sm:grid sm:grid-cols-10'>
+        <div className='mb-8 mt-24 sm:mb-0 sm:grid sm:grid-cols-10 lg:mt-[150px] lg:flex'>
           <img
             src='/homepage/mobile/image-homepage-profile@2x.jpg'
             alt=''
@@ -46,12 +54,18 @@ export default function Home() {
           <img
             src='/homepage/tablet/image-homepage-profile@2x.jpg'
             alt=''
-            className=' hidden sm:col-span-4 sm:inline-block'
+            className='hidden sm:col-span-4 sm:inline-block lg:hidden'
           />
-          <div className='sm:col-span-6 sm:flex sm:flex-col sm:justify-between sm:pl-[68px]'>
-            <div>
-              <hr />
-              <div id='about-me-section'>
+          <img
+            src='/homepage/desktop/image-homepage-profile@2x.jpg'
+            alt=''
+            className='hidden lg:inline-block lg:w-[540px] lg:flex-initial'
+          />
+          <div className='hidden lg:inline-block lg:w-[125px] lg:flex-initial'></div>
+          <div className='sm:col-span-6 sm:flex sm:flex-col sm:justify-between sm:pl-[68px] lg:w-[350px] lg:flex-initial lg:pl-0'>
+            <div id='about-me-section'>
+              <hr className='hidden sm:flex' />
+              <div>
                 <h2 className='mb-7 mt-8'>About Me</h2>
                 <p className='mb-6'>
                   I'm a junior front-end developer looking for a new role in an
@@ -78,7 +92,6 @@ export default function Home() {
 
         <ContactFooter />
       </main>
-
       <Footer />
     </div>
   );

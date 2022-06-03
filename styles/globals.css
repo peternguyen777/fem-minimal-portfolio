@@ -34,7 +34,7 @@
 
   @media (min-width: 640px) {
     html {
-      scroll-padding: 144px;
+      scroll-padding-top: 144px;
     }
   }
 }

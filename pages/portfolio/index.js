@@ -10,7 +10,7 @@ const index = () => {
     <div>
       <Header />
 
-      <main className='mt-[104px] bg-secondary_grey_bg px-8 sm:mt-[144px] sm:px-10'>
+      <main className='mt-[104px] bg-secondary_grey_bg px-8 sm:mt-[144px] sm:px-10 lg:px-[165px]'>
         {PortfolioProjects.map((item) => {
           return (
             <div
@@ -37,16 +37,7 @@ const index = () => {
             </div>
           );
         })}
-        {/* <div className='mt-[80px] flex flex-col items-center sm:mt-24 sm:flex-row sm:justify-between'>
-          <h2 className='mb-10 text-center sm:my-0 sm:max-w-[350px] sm:items-center sm:text-left'>
-            Interested in doing a project together?
-          </h2>
-          <div className='sm:flex sm:flex-grow sm:items-center sm:justify-between'>
-            <hr className='hidden sm:mx-8 sm:inline-flex sm:flex-grow' />
-            <ButtonSecondary href='/contact'>CONTACT ME</ButtonSecondary>
-          </div>
-        </div>
-        <div className='pt-[80px] sm:pt-24' /> */}
+
         <ContactFooter />
       </main>
 

@@ -18,11 +18,11 @@ module.exports = {
         secondary_red: "#F43030",
       },
     },
-    screens: {
-      sm: "640px",
-      md: "768px",
-      lg: "1440px",
-    },
+    // screens: {
+    //   sm: "640px",
+    //   md: "768px",
+    //   lg: "1440px",
+    // },
   },
   plugins: [],
 };

@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <header>
-      <div className='fixed top-0 z-30 flex w-screen items-center justify-between bg-secondary_grey_bg p-8 pb-10 sm:px-10 sm:pt-16 sm:pb-12'>
+      <div className='fixed top-0 z-30 flex w-screen items-center justify-between bg-secondary_grey_bg p-8 pb-10 sm:px-10 sm:pt-16 sm:pb-12 lg:px-[165px]'>
         <Link href='/'>
           <a>
             <img src='/logo.svg' alt='' />
