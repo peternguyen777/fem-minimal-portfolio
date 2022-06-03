@@ -17,7 +17,7 @@ export default function Home() {
 
       <Header />
 
-      <main className='mt-[104px] bg-secondary_grey_bg px-8 sm:mt-[144px]'>
+      <main className='mt-[104px] bg-secondary_grey_bg px-8 sm:mt-[144px] sm:px-10'>
         <img
           src='/homepage/mobile/image-homepage-hero@2x.jpg'
           alt=''

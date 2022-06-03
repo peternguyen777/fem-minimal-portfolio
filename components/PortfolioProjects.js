@@ -2,6 +2,7 @@ const PortfolioProjects = [
   {
     id: 0,
     imageMobile: "/portfolio/mobile/image-portfolio-manage@2x.jpg",
+    imageTablet: "/portfolio/tablet/image-portfolio-manage@2x.jpg",
     title: "Manage",
     slug: "manage",
     introduction:
@@ -11,12 +12,16 @@ const PortfolioProjects = [
     category: "Interaction Design / Front End Development",
     languages: "HTML / CSS / JS",
     heroMobile: "/detail/mobile/image-manage-hero@2x.jpg",
+    heroTablet: "/detail/tablet/image-manage-hero@2x.jpg",
     previewMobile: "/detail/mobile/image-manage-preview-1@2x.jpg",
     preview2Mobile: "/detail/mobile/image-manage-preview-2@2x.jpg",
+    previewTablet: "/detail/tablet/image-manage-preview-1@2x.jpg",
+    preview2Tablet: "/detail/tablet/image-manage-preview-2@2x.jpg",
   },
   {
     id: 1,
     imageMobile: "/portfolio/mobile/image-portfolio-bookmark@2x.jpg",
+    imageTablet: "/portfolio/tablet/image-portfolio-bookmark@2x.jpg",
     title: "Bookmark",
     slug: "bookmark",
     introduction:
@@ -26,12 +31,16 @@ const PortfolioProjects = [
     category: "Interaction Design / Front End Development",
     languages: "HTML / CSS / JS",
     heroMobile: "/detail/mobile/image-bookmark-hero@2x.jpg",
+    heroTablet: "/detail/tablet/image-bookmark-hero@2x.jpg",
     previewMobile: "/detail/mobile/image-bookmark-preview-1@2x.jpg",
     preview2Mobile: "/detail/mobile/image-bookmark-preview-2@2x.jpg",
+    previewTablet: "/detail/tablet/image-bookmark-preview-1@2x.jpg",
+    preview2Tablet: "/detail/tablet/image-bookmark-preview-2@2x.jpg",
   },
   {
     id: 2,
     imageMobile: "/portfolio/mobile/image-portfolio-insure@2x.jpg",
+    imageTablet: "/portfolio/tablet/image-portfolio-insure@2x.jpg",
     title: "Insure",
     slug: "insure",
     introduction:
@@ -41,12 +50,16 @@ const PortfolioProjects = [
     category: "Interaction Design / Front End Development",
     languages: "HTML / CSS / JS",
     heroMobile: "/detail/mobile/image-insure-hero@2x.jpg",
+    heroTablet: "/detail/tablet/image-insure-hero@2x.jpg",
     previewMobile: "/detail/mobile/image-insure-preview-1@2x.jpg",
     preview2Mobile: "/detail/mobile/image-insure-preview-2@2x.jpg",
+    previewTablet: "/detail/tablet/image-insure-preview-1@2x.jpg",
+    preview2Tablet: "/detail/tablet/image-insure-preview-2@2x.jpg",
   },
   {
     id: 3,
     imageMobile: "/portfolio/mobile/image-portfolio-fylo@2x.jpg",
+    imageTablet: "/portfolio/tablet/image-portfolio-fylo@2x.jpg",
     title: "Fylo",
     slug: "fylo",
     introduction:
@@ -56,8 +69,11 @@ const PortfolioProjects = [
     category: "Interaction Design / Front End Development",
     languages: "HTML / CSS",
     heroMobile: "/detail/mobile/image-fylo-hero@2x.jpg",
+    heroTablet: "/detail/tablet/image-fylo-hero@2x.jpg",
     previewMobile: "/detail/mobile/image-fylo-preview-1@2x.jpg",
     preview2Mobile: "/detail/mobile/image-fylo-preview-2@2x.jpg",
+    previewTablet: "/detail/tablet/image-fylo-preview-1@2x.jpg",
+    preview2Tablet: "/detail/tablet/image-fylo-preview-2@2x.jpg",
   },
 ];
 

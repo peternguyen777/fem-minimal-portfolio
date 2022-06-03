@@ -7,9 +7,9 @@ const index = () => {
   return (
     <div>
       <Header />
-      <main className='mt-[104px] bg-secondary_grey_bg px-8'>
-        <div>
-          <hr className='mb-6' />
+      <main className='mt-[104px] bg-secondary_grey_bg px-8 sm:mt-[144px] sm:px-10'>
+        <div className='sm:pt-[46px]'>
+          <hr className='mb-6 sm:mb-8' />
           <h2 className='mb-6'>Get in Touch</h2>
           <p className='mb-6 text-[15px]'>
             I'd love to hear about what you're working on and how I could help.
@@ -42,9 +42,9 @@ const index = () => {
             </svg>
           </div>
         </div>
-        <hr className='mb-6' />
+        <hr className='mb-6 sm:mb-8' />
         <div>
-          <h2 className='mb-6'>Contact Me</h2>
+          <h2 className='mb-6 sm:mb-8'>Contact Me</h2>
           <form
             action='mailto:peter.quang.nguyen@gmail.com'
             method='POST'
@@ -94,7 +94,7 @@ const index = () => {
               className='mb-6 h-[96px] w-full bg-primary_darkblue/10 pt-2 indent-4 text-[13px] leading-[30px] text-primary_darkblue focus:border focus:border-primary_cyan focus:outline-none'
             />
             <ButtonSendMessage>SEND MESSAGE</ButtonSendMessage>
-            <div className='pt-[80px]'></div>
+            <div className='pt-20 sm:pt-24'></div>
           </form>
         </div>
       </main>

@@ -20,7 +20,7 @@
   }
 
   p {
-    @apply font-publicsans text-[16px] font-normal leading-[30px] text-primary_darkblue;
+    @apply font-publicsans text-[16px] font-normal leading-[30px] text-primary_darkblue opacity-80;
   }
 
   textarea {
