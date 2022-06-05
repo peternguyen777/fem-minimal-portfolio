@@ -17,7 +17,7 @@ export default function Home() {
 
       <Header />
 
-      <main className='mt-[104px] bg-secondary_grey_bg px-8 sm:mt-[144px] sm:px-10 lg:px-[165px]'>
+      <main className='mt-[104px] bg-secondary_grey_bg px-8 sm:mt-[144px] sm:px-10 xl:mx-auto xl:max-w-[1440px] xl:px-[165px]'>
         <img
           src='/homepage/mobile/image-homepage-hero@2x.jpg'
           alt=''
@@ -27,25 +27,25 @@ export default function Home() {
           <img
             src='/homepage/tablet/image-homepage-hero@2x.jpg'
             alt=''
-            className='hidden sm:mb-0 sm:inline-block lg:hidden'
+            className='hidden sm:mb-0 sm:inline-block xl:hidden'
           />
           <img
             src='/homepage/desktop/image-homepage-hero@2x.jpg'
             alt=''
-            className='hidden lg:mb-0 lg:inline-block'
+            className='hidden xl:mb-0 xl:inline-block'
           />
-          <div className='sm:absolute sm:bottom-0 sm:flex sm:h-[278px] sm:w-[514px] sm:flex-col sm:justify-end sm:bg-secondary_grey_bg lg:h-[357px] lg:w-[445px]'>
-            <h1 className='mb-8 hidden lg:inline-block lg:w-[390px]'>
+          <div className='sm:absolute sm:bottom-0 sm:flex sm:h-[278px] sm:w-[514px] sm:flex-col sm:justify-end sm:bg-secondary_grey_bg xl:h-[357px] xl:w-[445px]'>
+            <h1 className='mb-8 hidden xl:inline-block xl:w-[390px]'>
               Hey, I'm Alex Spencer and I love building beautiful websites
             </h1>
-            <h2 className='mb-8 sm:w-[458px] lg:hidden'>
+            <h2 className='mb-8 sm:w-[458px] xl:hidden'>
               Hey, I'm Alex Spencer and I love building beautiful websites
             </h2>
             <ButtonPrimary href='#about-me-section'>ABOUT ME</ButtonPrimary>
           </div>
         </div>
 
-        <div className='mb-8 mt-24 sm:mb-0 sm:grid sm:grid-cols-10 lg:mt-[150px] lg:flex'>
+        <div className='mb-8 mt-24 sm:mb-0 sm:grid sm:grid-cols-10 xl:mt-[150px] xl:flex'>
           <img
             src='/homepage/mobile/image-homepage-profile@2x.jpg'
             alt=''
@@ -54,15 +54,15 @@ export default function Home() {
           <img
             src='/homepage/tablet/image-homepage-profile@2x.jpg'
             alt=''
-            className='hidden sm:col-span-4 sm:inline-block lg:hidden'
+            className='hidden sm:col-span-4 sm:inline-block xl:hidden'
           />
           <img
             src='/homepage/desktop/image-homepage-profile@2x.jpg'
             alt=''
-            className='hidden lg:inline-block lg:w-[540px] lg:flex-initial'
+            className='hidden xl:inline-block xl:w-[540px] xl:flex-initial'
           />
-          <div className='hidden lg:inline-block lg:w-[125px] lg:flex-initial'></div>
-          <div className='sm:col-span-6 sm:flex sm:flex-col sm:justify-between sm:pl-[68px] lg:w-[350px] lg:flex-initial lg:pl-0'>
+          <div className='hidden xl:inline-block xl:w-[125px] xl:flex-initial'></div>
+          <div className='sm:col-span-6 sm:flex sm:flex-col sm:justify-between sm:pl-[68px] xl:w-[350px] xl:flex-initial xl:pl-0'>
             <div id='about-me-section'>
               <hr className='hidden sm:flex' />
               <div>

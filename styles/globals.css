@@ -30,6 +30,7 @@
   html {
     scroll-behavior: smooth;
     scroll-padding: 104px;
+    @apply bg-secondary_grey_bg;
   }
 
   @media (min-width: 640px) {

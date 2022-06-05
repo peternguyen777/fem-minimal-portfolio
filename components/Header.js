@@ -8,9 +8,13 @@ const Header = () => {
     setMobileMenu(!mobileMenu);
   };
 
+  const mobileMenuOffHandler = () => {
+    setMobileMenu(false);
+  };
+
   return (
-    <header>
-      <div className='fixed top-0 z-30 flex w-screen items-center justify-between bg-secondary_grey_bg p-8 pb-10 sm:px-10 sm:pt-16 sm:pb-12 lg:px-[165px]'>
+    <header className='fixed top-0 z-30 w-full bg-secondary_grey_bg'>
+      <div className='flex items-center justify-between p-8 pb-10 sm:px-10 sm:pt-16 sm:pb-12 xl:mx-auto xl:max-w-[1440px] xl:px-[165px]'>
         <Link href='/'>
           <a>
             <img src='/logo.svg' alt='' />
@@ -51,17 +55,26 @@ const Header = () => {
         {mobileMenu && (
           <div className='absolute right-[32px] top-[88px] flex w-[223px] flex-col items-center space-y-8 bg-primary_darkblue py-10'>
             <Link href='/'>
-              <a className='font-publicsans text-[12px] leading-[14px] tracking-[2px] text-white'>
+              <a
+                className='font-publicsans text-[12px] leading-[14px] tracking-[2px] text-white'
+                onClick={mobileMenuOffHandler}
+              >
                 HOME
               </a>
             </Link>
             <Link href='/portfolio'>
-              <a className='font-publicsans text-[12px] leading-[14px] tracking-[2px] text-white'>
+              <a
+                className='font-publicsans text-[12px] leading-[14px] tracking-[2px] text-white'
+                onClick={mobileMenuOffHandler}
+              >
                 PORTFOLIO
               </a>
             </Link>
             <Link href='/contact'>
-              <a className='font-publicsans text-[12px] leading-[14px] tracking-[2px] text-white'>
+              <a
+                className='font-publicsans text-[12px] leading-[14px] tracking-[2px] text-white'
+                onClick={mobileMenuOffHandler}
+              >
                 CONTACT ME
               </a>
             </Link>
