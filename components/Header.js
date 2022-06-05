@@ -22,17 +22,17 @@ const Header = () => {
         </Link>
         <div className='hidden items-center space-x-[42px] sm:inline-flex sm:items-center'>
           <Link href='/'>
-            <a className='font-publicsans text-[12px] leading-[14px] tracking-[2px]'>
+            <a className='font-publicsans text-[12px] leading-[14px] tracking-[2px] hover:text-primary_cyan'>
               HOME
             </a>
           </Link>
           <Link href='/portfolio'>
-            <a className='font-publicsans text-[12px] leading-[14px] tracking-[2px]'>
+            <a className='font-publicsans text-[12px] leading-[14px] tracking-[2px] hover:text-primary_cyan'>
               PORTFOLIO
             </a>
           </Link>
           <Link href='/contact'>
-            <a className='font-publicsans text-[12px] leading-[14px] tracking-[2px]'>
+            <a className='font-publicsans text-[12px] leading-[14px] tracking-[2px] hover:text-primary_cyan'>
               CONTACT ME
             </a>
           </Link>
