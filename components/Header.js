@@ -53,7 +53,7 @@ const Header = () => {
           />
         )}
         {mobileMenu && (
-          <div className='absolute right-[32px] top-[88px] flex w-[223px] flex-col items-center space-y-8 bg-primary_darkblue py-10'>
+          <div className='absolute right-[32px] top-[88px] flex w-[223px] flex-col items-center space-y-8 bg-primary_darkblue py-10 sm:hidden'>
             <Link href='/'>
               <a
                 className='font-publicsans text-[12px] leading-[14px] tracking-[2px] text-white'
