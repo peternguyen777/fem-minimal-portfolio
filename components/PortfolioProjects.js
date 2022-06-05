@@ -21,6 +21,8 @@ const PortfolioProjects = [
     preview2Tablet: "/detail/tablet/image-manage-preview-2@2x.jpg",
     previewDesktop: "/detail/desktop/image-manage-preview-1@2x.jpg",
     preview2Desktop: "/detail/desktop/image-manage-preview-2@2x.jpg",
+    website:
+      "https://www.frontendmentor.io/challenges/manage-landing-page-SLXqC6P5",
   },
   {
     id: 1,
@@ -44,6 +46,8 @@ const PortfolioProjects = [
     preview2Tablet: "/detail/tablet/image-bookmark-preview-2@2x.jpg",
     previewDesktop: "/detail/desktop/image-bookmark-preview-1@2x.jpg",
     preview2Desktop: "/detail/desktop/image-bookmark-preview-2@2x.jpg",
+    website:
+      "https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158",
   },
   {
     id: 2,
@@ -67,6 +71,8 @@ const PortfolioProjects = [
     preview2Tablet: "/detail/tablet/image-insure-preview-2@2x.jpg",
     previewDesktop: "/detail/desktop/image-insure-preview-1@2x.jpg",
     preview2Desktop: "/detail/desktop/image-insure-preview-2@2x.jpg",
+    website:
+      "https://www.frontendmentor.io/challenges/insure-landing-page-uTU68JV8",
   },
   {
     id: 3,
@@ -90,6 +96,8 @@ const PortfolioProjects = [
     preview2Tablet: "/detail/tablet/image-fylo-preview-2@2x.jpg",
     previewDesktop: "/detail/desktop/image-fylo-preview-1@2x.jpg",
     preview2Desktop: "/detail/desktop/image-fylo-preview-2@2x.jpg",
+    website:
+      "https://www.frontendmentor.io/challenges/fylo-dark-theme-landing-page-5ca5f2d21e82137ec91a50fd",
   },
 ];
 

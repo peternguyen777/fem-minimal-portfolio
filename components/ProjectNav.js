@@ -5,7 +5,7 @@ const ProjectNav = (props) => {
   return (
     <div className='border-primary_darkblue/15 grid grid-cols-2 border-t border-b'>
       <Link href={`/portfolio/${props.prevSlug}`}>
-        <div className='border-primary_darkblue/15 sm:item col-span-1 grid place-items-start border-r sm:flex'>
+        <div className='border-primary_darkblue/15 sm:item col-span-1 grid cursor-pointer place-items-start border-r sm:flex'>
           <img
             src='/icons/arrow-left.svg'
             alt=''
@@ -18,7 +18,7 @@ const ProjectNav = (props) => {
         </div>
       </Link>
       <Link href={`/portfolio/${props.nextSlug}`}>
-        <div className='col-span-1 grid place-items-end sm:flex sm:flex-row-reverse '>
+        <div className='col-span-1 grid cursor-pointer place-items-end sm:flex sm:flex-row-reverse '>
           <img
             src='/icons/arrow-right.svg'
             alt=''
