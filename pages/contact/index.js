@@ -4,6 +4,8 @@ import Footer from "../../components/Footer";
 import ButtonSendMessage from "../../components/ButtonSendMessage";
 
 const index = () => {
+  const smallPage = true;
+
   return (
     <div>
       <Header />
@@ -110,7 +112,8 @@ const index = () => {
           </form>
         </div>
       </main>
-      <Footer />
+
+      <Footer smallPage={smallPage} />
     </div>
   );
 };
