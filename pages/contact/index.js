@@ -1,10 +1,78 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import ButtonSendMessage from "../../components/ButtonSendMessage";
 import Link from "next/link";
 
 const index = () => {
+  const [enteredName, setEnteredName] = useState("");
+  const [enteredNameTouched, setEnteredNameTouched] = useState(false);
+
+  const [enteredEmail, setEnteredEmail] = useState("");
+  const [enteredEmailTouched, setEnteredEmailTouched] = useState(false);
+
+  const [enteredMessage, setEnteredMessage] = useState("");
+  const [enteredMessageTouched, setEnteredMessageTouched] = useState(false);
+
+  const enteredNameIsValid = enteredName.trim() !== "";
+  const nameInputIsInvalid = !enteredNameIsValid && enteredNameTouched;
+
+  const enteredEmailIsValid = enteredEmail.includes("@");
+  const emailInputIsInvalid = !enteredEmailIsValid && enteredEmailTouched;
+
+  const enteredMessageIsValid = enteredMessage.trim() !== "";
+  const messageInputIsInvalid = !enteredMessageIsValid && enteredMessageTouched;
+
+  let formIsValid = false;
+
+  if (enteredNameIsValid && enteredEmailIsValid && enteredMessageIsValid) {
+    formIsValid = true;
+  }
+
+  const nameInputChangeHandler = (event) => {
+    setEnteredName(event.target.value);
+  };
+
+  const emailInputChangeHandler = (event) => {
+    setEnteredEmail(event.target.value);
+  };
+
+  const messageInputChangeHandler = (event) => {
+    setEnteredMessage(event.target.value);
+  };
+
+  const nameInputBlurHandler = (event) => {
+    setEnteredNameTouched(true);
+  };
+
+  const emailInputBlurHandler = (event) => {
+    setEnteredEmailTouched(true);
+  };
+
+  const messageInputBlurHandler = (event) => {
+    setEnteredMessageTouched(true);
+  };
+
+  const formSubmissionHandler = (event) => {
+    event.preventDefault();
+
+    setEnteredNameTouched(true);
+    setEnteredEmailTouched(true);
+    setEnteredMessageTouched(true);
+
+    if (!enteredNameIsValid || !enteredEmailIsValid || !enteredMessageIsValid) {
+      return;
+    }
+
+    setEnteredName("");
+    setEnteredEmail("");
+    setEnteredMessage("");
+
+    setEnteredNameTouched(false);
+    setEnteredEmailTouched(false);
+    setEnteredMessageTouched(false);
+  };
+
   return (
     <div className='flex min-h-screen flex-col justify-between'>
       <Header />
@@ -74,6 +142,8 @@ const index = () => {
             method='POST'
             encType='text/plain'
             className='w-full'
+            noValidate
+            onSubmit={formSubmissionHandler}
           >
             <label
               htmlFor='name'
@@ -82,13 +152,27 @@ const index = () => {
               Name
             </label>
             <br />
-            <input
-              type='text'
-              id='name'
-              placeholder='Jane Appleseed'
-              required
-              className='mb-6 h-[48px] w-full bg-primary_darkblue/10 indent-4 text-[13px] leading-[30px] text-primary_darkblue focus:border focus:border-primary_cyan focus:outline-none'
-            />
+            <div className='relative mb-6'>
+              <input
+                type='text'
+                id='name'
+                placeholder='Jane Appleseed'
+                required
+                onChange={nameInputChangeHandler}
+                onBlur={nameInputBlurHandler}
+                value={enteredName}
+                className={`h-[48px] w-full bg-primary_darkblue/10 indent-4 text-[13px] leading-[30px] text-primary_darkblue focus:outline-none  ${
+                  nameInputIsInvalid
+                    ? `border border-secondary_red`
+                    : `focus:border focus:border-primary_cyan`
+                }`}
+              />
+              {nameInputIsInvalid && (
+                <p className='absolute translate-y-1 font-publicsans text-[10px] font-bold italic leading-[12px] text-secondary_red'>
+                  Name must not be empty
+                </p>
+              )}
+            </div>
             <label
               htmlFor='email'
               className='mb-2 font-publicsans text-[13px] font-bold leading-[30px] text-primary_darkblue'
@@ -96,13 +180,27 @@ const index = () => {
               Email Address
             </label>
             <br />
-            <input
-              type='email'
-              id='email'
-              placeholder='email@example.com'
-              required
-              className='mb-6 h-[48px] w-full bg-primary_darkblue/10 indent-4 text-[13px] leading-[30px] text-primary_darkblue focus:border focus:border-primary_cyan focus:outline-none'
-            />
+            <div className='relative mb-6'>
+              <input
+                type='email'
+                id='email'
+                placeholder='email@example.com'
+                required
+                onChange={emailInputChangeHandler}
+                onBlur={emailInputBlurHandler}
+                value={enteredEmail}
+                className={`h-[48px] w-full bg-primary_darkblue/10 indent-4 text-[13px] leading-[30px] text-primary_darkblue focus:outline-none ${
+                  emailInputIsInvalid
+                    ? `border border-secondary_red`
+                    : `focus:border focus:border-primary_cyan`
+                }`}
+              />
+              {emailInputIsInvalid && (
+                <p className='absolute translate-y-1 font-publicsans text-[10px] font-bold italic leading-[12px] text-secondary_red'>
+                  Valid email must contain @ symbol.
+                </p>
+              )}
+            </div>
             <label
               htmlFor='message'
               className='mb-2 font-publicsans text-[13px] font-bold leading-[30px] text-primary_darkblue'
@@ -110,14 +208,28 @@ const index = () => {
               Message
             </label>
             <br />
-            <textarea
-              type='text'
-              id='message'
-              placeholder='How can I help?'
-              rows='3'
-              required
-              className='mb-6 h-[96px] w-full bg-primary_darkblue/10 pt-2 indent-4 text-[13px] leading-[30px] text-primary_darkblue focus:border focus:border-primary_cyan focus:outline-none'
-            />
+            <div className='relative mb-6'>
+              <textarea
+                type='text'
+                id='message'
+                placeholder='How can I help?'
+                rows='3'
+                required
+                onChange={messageInputChangeHandler}
+                onBlur={messageInputBlurHandler}
+                value={enteredMessage}
+                className={`block h-[96px] w-full bg-primary_darkblue/10 pt-2 pl-4 text-[13px] leading-[30px] text-primary_darkblue focus:outline-none ${
+                  messageInputIsInvalid
+                    ? `border border-secondary_red`
+                    : `focus:border focus:border-primary_cyan`
+                }`}
+              />
+              {messageInputIsInvalid && (
+                <p className='absolute translate-y-1 font-publicsans text-[10px] font-bold italic leading-[12px] text-secondary_red'>
+                  Message must not be empty
+                </p>
+              )}
+            </div>
             <ButtonSendMessage>SEND MESSAGE</ButtonSendMessage>
             <div className='pt-20 sm:pt-24'></div>
           </form>
