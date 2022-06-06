@@ -4,7 +4,7 @@ import Footer from "../../components/Footer";
 import ButtonSendMessage from "../../components/ButtonSendMessage";
 import Link from "next/link";
 
-const index = () => {
+const Index = () => {
   const [enteredName, setEnteredName] = useState("");
   const [enteredNameTouched, setEnteredNameTouched] = useState(false);
 
@@ -241,4 +241,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

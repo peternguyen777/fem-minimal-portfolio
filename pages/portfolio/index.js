@@ -5,7 +5,7 @@ import PortfolioProjects from "../../components/PortfolioProjects";
 import ButtonSecondary from "../../components/ButtonSecondary";
 import ContactFooter from "../../components/ContactFooter";
 
-const index = () => {
+const Index = () => {
   return (
     <div className='flex min-h-screen flex-col justify-between'>
       <Header />
@@ -50,4 +50,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
