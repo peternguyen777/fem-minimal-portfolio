@@ -138,8 +138,8 @@ const Index = () => {
             </h2>
           </div>
           <form
-            action='mailto:peter.quang.nguyen@gmail.com'
-            method='POST'
+            // action='mailto:peter.quang.nguyen@gmail.com'
+            // method='POST'
             encType='text/plain'
             className='w-full'
             noValidate
