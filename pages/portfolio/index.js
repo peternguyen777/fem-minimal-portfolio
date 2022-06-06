@@ -7,7 +7,7 @@ import ContactFooter from "../../components/ContactFooter";
 
 const index = () => {
   return (
-    <div>
+    <div className='flex min-h-screen flex-col justify-between'>
       <Header />
 
       <main className='mt-[104px] bg-secondary_grey_bg px-8 sm:mt-[144px] sm:px-10 xl:mx-auto xl:max-w-[1440px] xl:px-[165px]'>

@@ -5,12 +5,10 @@ import ButtonSendMessage from "../../components/ButtonSendMessage";
 import Link from "next/link";
 
 const index = () => {
-  const smallPage = true;
-
   return (
-    <div>
+    <div className='flex min-h-screen flex-col justify-between'>
       <Header />
-      <main className='mt-[104px] bg-secondary_grey_bg px-8 sm:mt-[144px] sm:px-10 xl:mx-auto xl:max-w-[1440px] xl:px-[165px]'>
+      <main className='mt-[104px]  bg-secondary_grey_bg px-8 sm:mt-[144px] sm:px-10 xl:mx-auto xl:max-w-[1440px] xl:px-[165px]'>
         <div className='sm:pt-[46px]'>
           <hr className='mb-6 sm:mb-8 xl:mb-12' />
           <div className='xl:flex'>
@@ -126,7 +124,7 @@ const index = () => {
         </div>
       </main>
 
-      <Footer smallPage={smallPage} />
+      <Footer />
     </div>
   );
 };

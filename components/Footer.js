@@ -3,11 +3,7 @@ import Link from "next/link";
 
 const Footer = (props) => {
   return (
-    <footer
-      className={`${
-        props.smallPage && `sm:absolute sm:bottom-0 sm:w-full`
-      }  bg-primary_darkblue`}
-    >
+    <footer className='bg-primary_darkblue'>
       <div className='flex flex-col items-center sm:h-[80px] sm:flex-row sm:justify-between sm:px-10 xl:mx-auto xl:max-w-[1440px] xl:px-[165px]'>
         <div className='flex flex-col items-center sm:flex-row sm:items-center'>
           <Link href='/'>
