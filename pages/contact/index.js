@@ -169,7 +169,7 @@ const Index = () => {
               />
               {nameInputIsInvalid && (
                 <p className='absolute translate-y-1 font-publicsans text-[10px] font-bold italic leading-[12px] text-secondary_red'>
-                  Name must not be empty
+                  This field is required
                 </p>
               )}
             </div>
@@ -197,7 +197,7 @@ const Index = () => {
               />
               {emailInputIsInvalid && (
                 <p className='absolute translate-y-1 font-publicsans text-[10px] font-bold italic leading-[12px] text-secondary_red'>
-                  Valid email must contain @ symbol.
+                  This field is required
                 </p>
               )}
             </div>
@@ -226,7 +226,7 @@ const Index = () => {
               />
               {messageInputIsInvalid && (
                 <p className='absolute translate-y-1 font-publicsans text-[10px] font-bold italic leading-[12px] text-secondary_red'>
-                  Message must not be empty
+                  This field is required
                 </p>
               )}
             </div>
